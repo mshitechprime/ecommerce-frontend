@@ -1,14 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import logo from './logo.svg';
-import Home from './Home';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './components/Home';
+import Shop from './components/Shop';
+import Product from './components/Product';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/product" element={<Product />} />
       </Routes>
     </Router>
   );
